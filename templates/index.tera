@@ -1,0 +1,20 @@
+{% extends "base" %}
+{% block app %}
+<h1>Hello World</h1>
+<form method="POST">
+    <input type="text" class="datepicker" name="date">
+    <label>
+        <input type="checkbox" name="save" />
+        <span>Save?</span>
+    </label>
+    <button class="btn waves-effect waves-light" type="submit">Submit
+        <i class="material-icons right">send</i>
+    </button>
+</form>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var elems = document.querySelectorAll('.datepicker');
+        M.Datepicker.init(elems);
+    });
+</script>
+{% endblock app %}

@@ -1,0 +1,15 @@
+[package]
+name = "webapp"
+version = "0.1.0"
+authors = ["beldmian <beldmian@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+rocket = "0.4.4"
+
+[dependencies.rocket_contrib]
+version = "0.4.4"
+features = ["tera_templates"]
+
+[development]
+template_dir = "templates/"

@@ -1,0 +1,4 @@
+{% extends "base" %}
+{% block app %}
+<h1>{{ save }}</h1>
+{% endblock app %}
